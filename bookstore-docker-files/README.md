@@ -116,7 +116,7 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 ## Steps to Solution
   
-- Step 1: Download or clone project definition from `clarusway-aws-workshop` repo on Github
+- Step 1: Download or clone project definition from `https://github.com/cloudnice/dockerization-bookstore.git` repo on Github
 
 - Step 2: Create project folder for local public repo on your pc
 
@@ -131,6 +131,18 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 ## Notes
 
 - To showcase your projects REST functions, use `curl` command for each HTTP methods namely, `GET`, `POST`, `PUT`, `DELETE`.
+
+```python
+curl -X POST -H "Content-Type: application/json" -d '{"title":"New Book","author":"Author Name"}' http://localhost/books
+
+curl -X DELETE http://localhost/books/1
+
+curl -X POST -H "Content-Type: application/json" -d '{"title":"New Book","author":"Author Name"}' http://localhost/books
+
+curl -X PUT -H "Content-Type: application/json" -d '{"title":"Updated Book","author":"New Author","is_sold":1}' http://localhost/books/1
+```
+
+
 
 ## Resources
 
